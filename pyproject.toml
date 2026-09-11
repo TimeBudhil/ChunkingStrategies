@@ -7,10 +7,21 @@ authors = [
     { name = "Budhil Thijm", email = "71571047+TimeBudhil@users.noreply.github.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.6.2",
+    "langchain-pinecone>=0.2.13",
+    "langfuse>=4.15.2",
+    "langgraph>=1.2.11",
+    "pinecone>=7.3.0",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.3",
+    "typer>=0.27.2",
+]
 
 [project.scripts]
-chunkingstrategies = "chunkingstrategies:main"
+chunkingstrategies = "chunkingstrategies.cli:app"
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
